@@ -3,7 +3,7 @@ CC			=	cc
 CFLAGS		=	-Wall -Wextra -Werror
 CDEBUG		=	-g -fsanitize=address
 RM			=	rm -rf
-AR			=	ar crs
+AR			=	ar -crs
 
 # [ FILE ]
 NAME		=	libft.a
