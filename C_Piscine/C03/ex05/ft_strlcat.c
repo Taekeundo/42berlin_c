@@ -20,6 +20,11 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
+/*	[F]
+	[ Definition ]
+	Check the [f]ft_strlcpy.
+	Almost same, the only difference is cat || copy.
+*/
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
 	unsigned int	i;
@@ -44,7 +49,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	return (dlen + slen);
 }
 
-/*
+/*	[ Testing ]
 #include <stdio.h>
 #include <string.h>
 

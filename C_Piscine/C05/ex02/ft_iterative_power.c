@@ -10,6 +10,19 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+	[ Definition ]
+	Calculate power of a given integer type, Param(1):"nb"
+	as many times as Param(2):"power", using a loop.
+
+	[ Background ]
+	power: nb * nb * nb * ... (power times).
+
+	[ Example ]
+	ft_iterative_powe(2, 0) -> 2 ^ 0 = 1
+	ft_iterative_powe(3, 1) -> 3 ^ 1 = 3
+	ft_iterative_powe(8, 2) -> 8 ^ 2 = 64
+*/
 int	ft_iterative_power(int nb, int power)
 {
 	int	i;
@@ -27,7 +40,7 @@ int	ft_iterative_power(int nb, int power)
 	return (nb);
 }
 
-/*
+/*	[ Testing ]
 #include <stdio.h>
 
 int main(void)

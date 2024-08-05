@@ -10,6 +10,37 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*	[F]
+	[ Definition ]
+	Return the Fibonaacci number at the given Param:"index",
+	in the Fibobacci sequence.
+	
+	[ Background ]
+	Fibonacci sequence
+	Index: 0	1	2	3	4	5	6	7	8	9	10	...
+	Value: 0	1	1	2	3	5	8	13	21	44	65	...
+
+	[ Example ]
+	ft_fibo(0);		ft_fibo(1);		ft_fibo(2)
+	= 0				= 1				= 1 + 1 = 1
+
+	ft_fibo(3);
+	= ft_fibo(2) + ft_fibo(1)
+	= 1 + 1 = 2
+	
+	ft_fibo(4);
+	= ft_fibo(3) + ft_fibo(2)
+	= 2 + 1 = 3
+	
+	ft_fibo(5);
+	= ft_fibo(4) + ft_fibo(3)
+	= 3 + 2 = 5
+
+	ft_fibo(6);
+	= ft_fibo(5) + ft_fibo(4)
+	= 5 + 3 = 8
+
+*/
 int	ft_fibonacci(int index)
 {
 	if (index < 0)
@@ -22,7 +53,7 @@ int	ft_fibonacci(int index)
 		return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
 }
 
-/*
+/*	[ Testing ]
 #include <stdio.h>
 
 int	main(void)

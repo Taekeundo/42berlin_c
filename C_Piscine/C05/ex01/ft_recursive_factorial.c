@@ -10,6 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*	[F]
+	[ Definition ]
+	Check the reference, C05, ex00, almost same logic with that.
+	The only difference is, the direction of the multiplying.
+
+	factorial: 5 * 4 * 3 * 2 * 1
+	recursive: 1 * 2 * 3 * 4 * 5
+*/
 int	ft_recursive_factorial(int nb)
 {
 	if (nb < 0)
@@ -20,7 +28,7 @@ int	ft_recursive_factorial(int nb)
 		return (nb * ft_recursive_factorial(nb - 1));
 }
 
-/*
+/*	[ Testing ]
 #include <stdio.h>
 
 int	main (void)

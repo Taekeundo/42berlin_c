@@ -13,7 +13,6 @@
 /*	[F]
 	[ Definition ]
 	Convert Param:"str" to Uppercase, when it has lowercase.
-	
 */
 char	*ft_strupcase(char *str)
 {

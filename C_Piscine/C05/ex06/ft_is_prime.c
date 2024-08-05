@@ -10,6 +10,18 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*	[F]
+	[ Definition ]
+	If prime	-> return (1);
+	Else		-> return (0);
+
+	[ Logic ]
+	Divisor: starting '2' and puls one more in every loop.
+
+	[ Background ]
+	Prime number:
+	Natural number greater than 1 that has only 1 and itself as divisors.
+*/
 int	ft_is_prime(int nb)
 {
 	int	i;
@@ -26,7 +38,7 @@ int	ft_is_prime(int nb)
 	return (1);
 }
 
-/*
+/*	[ Testing ]
 #include <stdio.h>
 int	main(void)
 {

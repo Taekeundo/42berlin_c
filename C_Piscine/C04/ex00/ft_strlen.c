@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
+/*	[F]
+	[ Definition ]
+	Check the length of the string, Param(1):"str".
 */
-
 int	ft_strlen(char *str)
 {
 	int	i;
@@ -24,7 +24,8 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
-/*
+/*	[ Testing ]
+#include <stdio.h>
 int	main(void)
 {
 	char	str[] = "abcde";

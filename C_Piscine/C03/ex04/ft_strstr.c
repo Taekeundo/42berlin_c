@@ -10,6 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*	[F]
+	[ Definition ]
+	Searches for the substring, Param(2):"to_find" within the Param(1):"str".
+	If Param(2):"to_find" substring is found, returns the part of str starting
+	from the first occurrence of Param(2):"to_find".
+	
+	[ Parameters ]
+	Param(1): The string to be searched.
+	Param(2): The substring to search for.
+
+	[ Return ]
+	If found // A pointer to the first occurence of Param(2):"to_find".
+	IF not	 // NULL
+*/
 char	*ft_strstr(char *str, char *to_find)
 {
 	int	i;

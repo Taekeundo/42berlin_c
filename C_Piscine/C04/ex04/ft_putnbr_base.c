@@ -54,6 +54,11 @@ int	check_base(char *base)
 	return (1);
 }
 
+/*	[F]
+	[ Definition ]
+	Check the reference, C04, ex02, almost same logic with that.
+	The only difference is which base that i want to use.
+*/
 void	ft_putnbr_base(int nbr, char *base)
 {
 	long	nbr_l;
@@ -79,7 +84,7 @@ void	ft_putnbr_base(int nbr, char *base)
 		ft_putchar(base[nbr_l]);
 }
 
-/*
+/*	[ Testing ]
 int		main(void)
 {
 	ft_putnbr_base(-2147483648, "0123456789");

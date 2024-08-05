@@ -10,11 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-#include <limits.h>
-*/
+/*	[F]
+	[ Definition ]
+	Print out the nubmer, Param:"nb", one char by one char.
 
+	[ What i learned ]
+	(Integer) to (char) -> type conversion. (nb + '0').
+*/
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -46,7 +48,10 @@ void	ft_putnbr(int nb)
 	}
 }
 
-/*
+/*	[ Testing ]
+#include <stdio.h>
+#include <limits.h>
+
 int	main (void)
 {
 	int	a;

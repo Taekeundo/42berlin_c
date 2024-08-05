@@ -10,12 +10,16 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-*/
-
 #include <stdlib.h>
+/*	[F]
+	[ Definition ]
+	Convert Param:"str"'s type (ASCII) to (Integer).
 
+	[ Logic ]
+	1. Handling space case ('\t,\tab,' ', ..)
+	2. Handling sign case (+ or -).
+	3. Meet with number -> convert from the last digit.
+*/
 int	ft_atoi(char *str)
 {
 	int	c;
@@ -43,7 +47,8 @@ int	ft_atoi(char *str)
 	return (res * s);
 }
 
-/*
+/*	[ Testing ]
+#include <stdio.h>
 int	main(void)
 {
 	char	*str1;
@@ -55,12 +60,4 @@ int	main(void)
 	printf("%d\n", ft_atoi(str2));
 	return (0);
 }
-*/
-
-/*
-c = count // s = sign (+ or -)
-when encount isspace // 9 <= str[i] <= 13 || str[i] == 32
-space, tab // move to the next Char.
-when encount  +,- // especially if - // s * -1 == make a number positive.
-when encount number // express all charctor as a interger.
 */

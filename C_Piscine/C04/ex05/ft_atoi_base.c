@@ -77,22 +77,27 @@ int	check_atoi(char *str)
 	return (s);
 }
 
+/*	[F]
+	[ Definition ]
+	Check the reference, C04, ex03, almost same logic with that.
+	The only difference is which base that i want to use.
+*/
 int	ft_atoi_base(char *str, char *base)
 {
 	int	c;
-	int	s;
 	int	res;
+	int	s;
 	int	len;
 
 	c = 0;
 	res = 0;
-	s = check_atoi;
+	s = check_atoi(str);
 	len = check_base1(base);
 	if ((check_base1(base) != 0) && (check_base2(base) != 0))
 	{
 		while (str[c] && (str[c] >= '0' && str[c] <= '9'))
 		{
-			res = (str[c] - '0') + (res * divider);
+			res = (str[c] - '0') + (res * len);
 			c++;
 			return (res * s);
 		}
@@ -100,7 +105,7 @@ int	ft_atoi_base(char *str, char *base)
 	return (0);
 }
 
-/*
+/*	[ Testing ]
 int main(void)
 {
     char    *str;

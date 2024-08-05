@@ -52,6 +52,21 @@ void	ft_print_str(int ac, char **av)
 	}
 }
 
+/*	[F]
+	[ Definition ]
+	Sort the Param(2):"av" with the order of dictionary.
+	After sorting finished, print those out.
+
+	[ Example ]
+	ac = 2
+	av[0]: "program name"
+	av[1]: "abc"
+
+	i = 1, j = 2 -> i = 2
+	-> ft_print_str(2, char **av)
+	-> ft_putstr(av[1]);
+	-> abc
+*/
 int	main(int ac, char **av)
 {
 	int		i;

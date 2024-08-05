@@ -10,6 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*	[F]
+	[ Definition ]
+	Convert Param:"str" to lowercase, when it has uppercase.
+*/
 char	*ft_strlowcase(char *str)
 {
 	int	i;

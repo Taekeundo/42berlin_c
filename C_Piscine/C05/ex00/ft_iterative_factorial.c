@@ -10,6 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*	[F]
+	[ Definition ]
+	Calculate factorial of a given integer type, param:"nb" using a loop.
+
+	[ Background ]
+	The factorial: The result of multiplying all the integers from 1 to "nb".
+	ex) factorial 5 // 5 * 4 * 3 * 2 * 1 == 120
+*/
 int	ft_iterative_factorial(int nb)
 {
 	int	i;
@@ -27,7 +35,7 @@ int	ft_iterative_factorial(int nb)
 	return (i);
 }
 
-/*
+/*	[ Testing ]
 #include <stdio.h>
 
 int	main(void)

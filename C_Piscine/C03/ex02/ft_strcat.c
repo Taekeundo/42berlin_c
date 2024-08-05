@@ -10,6 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*	[F]
+	[ Definition ]
+	Concatenate Param(2):"src" to at the end of the Param(1):"dest"'s,
+	until the Param(2):"src" meets with '\0', which is the end of the src string.
+*/
 char	*ft_strcat(char *dest, char *src)
 {
 	int	i;

@@ -10,6 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+	[ Definition ]
+	Check the reference, C05, ex02, almost same logic with that.
+*/
 int	ft_recursive_power(int nb, int power)
 {
 	if (power < 0)
@@ -20,7 +24,7 @@ int	ft_recursive_power(int nb, int power)
 		return (nb * ft_recursive_power(nb, power - 1));
 }
 
-/*
+/*	[ Testing ]
 #include <stdio.h>
 
 int	main(void)

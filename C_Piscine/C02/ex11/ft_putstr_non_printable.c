@@ -11,6 +11,12 @@
 /* ************************************************************************** */
 #include <unistd.h>
 
+/*	[F]
+	[ Definition ]
+	Print out Param:"str" one char by one char by using [f] write.
+	If meet with non-printable char, change the base to hexa-decimal.
+	Else just write based on decimal.
+*/
 void	ft_putstr_non_printable(char *str)
 {
 	int		i;

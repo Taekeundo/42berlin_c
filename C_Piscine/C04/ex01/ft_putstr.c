@@ -12,6 +12,10 @@
 
 #include <unistd.h>
 
+/*	[F]
+	[ Definition ]
+	Print out the string, Param:"str", one char by one char.
+*/
 void	ft_putstr(char *str)
 {
 	int	i;
@@ -24,7 +28,7 @@ void	ft_putstr(char *str)
 	}
 }
 
-/*
+/*	[ Testing ]
 int	main(void)
 {
 	char str[] = "abbbbb";

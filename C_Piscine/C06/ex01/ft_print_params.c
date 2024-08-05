@@ -17,6 +17,9 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
+/*	[F]
+	Self-explanatory
+*/
 int	main(int ac, char **av)
 {
 	int	i;

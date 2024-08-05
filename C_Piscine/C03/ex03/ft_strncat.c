@@ -20,14 +20,20 @@ int	ft_strlen(char *str)
 	return (j);
 }
 
-char	*ft_strncat(char *dest, char *src, unsigned int nb)
+/*	[F]
+	[ Definition ]
+	Concatenate Param(2):"src" to at the end of the Param(1):"dest"'s,
+	until the Param(2):"src" meets with '\0', which is the end of the src string,
+	as many as Param(3):"n".
+*/
+char	*ft_strncat(char *dest, char *src, unsigned int n)
 {
 	unsigned int	i;
 	unsigned int	j;
 
 	i = 0;
 	j = ft_strlen(dest);
-	while (src[i] != '\0' && i < nb)
+	while (src[i] != '\0' && i < n)
 	{
 		dest[j] = src[i];
 		j++;

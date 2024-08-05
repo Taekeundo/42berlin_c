@@ -12,6 +12,9 @@
 
 #include <unistd.h>
 
+/*	[F]
+	Self-explanatory
+*/
 int	main(int ac, char **av)
 {
 	int	i;

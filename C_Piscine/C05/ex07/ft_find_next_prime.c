@@ -26,6 +26,15 @@ int	ft_is_prime(int nb)
 	return (1);
 }
 
+/*	[F]
+	[ Definition ]
+	Check the reference, C05 ex07.
+
+	[ Logic ]
+	nb		next minimun prime number
+	<= 2	2
+	> 2		using (ft_is_prime) until finding the next prime number.
+*/
 int	ft_find_next_prime(int nb)
 {
 	if (nb <= 2)
@@ -39,9 +48,7 @@ int	ft_find_next_prime(int nb)
 	return (0);
 }
 
-/* Q&A, what if nb < 0?? , prime means always over 0*/
-
-/*
+/*	[ Testing ]
 #include <stdio.h>
 int	main(void)
 {

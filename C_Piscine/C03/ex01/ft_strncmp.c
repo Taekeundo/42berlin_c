@@ -10,6 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*	[F]
+	[ Definition ]
+	Comparing two strings(Param(1):"s1" & Param(2):"s2")
+	one char by one char as many as Param(3):"n".
+	Return the value (*s1 - *s2).
+*/
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
 	unsigned int	i;

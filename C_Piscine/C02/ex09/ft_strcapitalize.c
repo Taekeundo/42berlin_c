@@ -10,6 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+/*	[F]
+	[ Definition ]
+	Convert Param:"str" to lowercase, when it has uppercase.
+	Convert Param:"str" to uppercase, when it has lowercase.
+	If meet with 'number', jump.
+*/
 char	*ft_strcapitalize(char *str)
 {
 	int	i;
