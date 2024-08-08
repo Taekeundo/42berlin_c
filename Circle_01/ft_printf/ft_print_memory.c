@@ -14,7 +14,9 @@
 
 /*	[F]
 	Through recursion puthex_u in the puthex_u
-	to find remainder with output hexadecimal 
+	to find remainder with output hexadecimal
+
+	Param(2):"pos" always be updated to check the current position.
 */
 int	puthex_u(unsigned long long num, int *pos)
 {
@@ -37,13 +39,15 @@ int	puthex_u(unsigned long long num, int *pos)
 
 /*	[F]
 	[ Definition ]
-	Print the Param(1):"address" by using [f] ft_putchar
-	And update the current position(= Param(2):"pos").
+	Print the Param(1):"address" by using [f] ft_putchar.
 
-	print out address at first "0x", cause it's always fixed.
+	Print out address at first "0x", cause it's always fixed.
 	The address must start with "0x".
 
-	print out left over hexadecimal (16 digit)
+	Print out left over hexadecimal (16 digit)
+
+	[ Memo ]
+	Param(2):"pos" always be updated to check the current position.
 */
 int	ft_print_memory(void *address, int *pos)
 {

@@ -13,7 +13,7 @@
 #include "ft_printf.h"
 
 /*	[F]
-	Check the "main.c" for explanation of the concept.
+	Check the "main.c" for explanation of the concept of the function.
 */
 int	check_type(const char *format, va_list *list, int *pos)
 {
@@ -41,10 +41,13 @@ int	check_type(const char *format, va_list *list, int *pos)
 	[ Definition ]
 	Check the type, which comes after '%' and print it.
 
-	
 	when Errors occur, return -1
 		if '%' is found, send next text address
-		if '%' is not found, len++;
+		if '%' is not found, [f]ft_putchar.
+
+	if (result < 0)	// [f]check_type || [f]ft_putchar fails.
+
+	like (malloc -> free), must use the 'va_end' after using the 'va_list'.
 */
 int	ft_printf(const char *str, ...)
 {

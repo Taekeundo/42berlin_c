@@ -15,7 +15,9 @@
 /*	[F]
 	[ Definition ]
 	Print the Param(1):"c"
-	And update the currently position, Param(2):"pos".
+
+	[ Memo ]
+	Param(2):"pos" always be updated to check the current position.
 */
 int	ft_putchar(char c, int *pos)
 {

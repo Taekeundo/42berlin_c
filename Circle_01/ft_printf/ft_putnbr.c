@@ -14,8 +14,7 @@
 
 /*	[F]
 	[ Definition ]
-	Print the Param(1):"n" by using the [f]ft_putchar
-	And update the current position(= Param(2):"pos").
+	Print the Param(1):"n" by using the [f]ft_putchar.
 	
 	[ Logic ]
 	Divide cases
@@ -23,6 +22,9 @@
 	2. Negative integer
 	3. Over 9 integer
 	4. One digit integer (0 <= x <= 9)
+
+	[ Memo ]
+	Param(2):"pos" always be updated to check the current position.
 */
 int	ft_putnbr(int n, int *pos)
 {

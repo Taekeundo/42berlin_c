@@ -34,7 +34,9 @@ void	put_div(unsigned int num, int digit, int *pos, int *result)
 /*	[F]
 	[ Definition ]
 	Print the Param(1):"num" by using the [f]ft_putchar.
-	And update the current position(= Param(2):"pos").
+	
+	[ Memo ]
+	Param(2):"pos" always be updated to check the current position.
 */
 int	ft_putnbr_u(unsigned int num, int *pos)
 {

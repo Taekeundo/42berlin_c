@@ -14,14 +14,16 @@
 
 /*	[F]
 	[ Definition ]
-	Print the Param(1):"n" by using the [f]ft_putchar
-	And update the current position(= Param(2):"pos").
+	Print the Param(1):"n" by using the [f]ft_putchar.
 	!! all based on Hexa-decimal !!
 
 	when the Param(2):"c" is 'x' then lower case
 	when the Param(2):"c" is 'X' then upper case
 
 	Through recursion funtion -> ft_puthex in ft_puthex.
+
+	[ Memo ]
+	Param(2):"pos" always be updated to check the current position.
 */
 int	ft_puthex(int n, char c, int *pos)
 {

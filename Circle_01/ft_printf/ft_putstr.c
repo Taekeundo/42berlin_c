@@ -14,11 +14,13 @@
 
 /*	[F]
 	[ Definition ]
-	Print the Param(1):"str" by using [f] ft_putchar
-	And update the current position(= Param(2):"pos").
+	Print the Param(1):"str" by using [f] ft_putchar.
 
 	[ Why using 'unsigned' type? ]
 	'i' is index, must be positive number.
+
+	[ Memo ]
+	Param(2):"pos" always be updated to check the current position.
 */
 int	ft_putstr(char *str, int *pos)
 {

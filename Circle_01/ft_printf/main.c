@@ -93,6 +93,16 @@
 */
 int	main(void)
 {
-	ft_printf("%p", 0);
+	ft_printf(" %p %p \n", 0, 0);
+	int	a = 5;
+	ft_printf("%d\n", a);
 	return (0);
 }
+
+/*	[ Testing ]
+	int *b = &a;
+	printf("Address of a: %p\n", &a);
+	printf("Address of pointer(b): %p\n", b);
+	ft_printf("%p\n");
+	printf("ft_printf's return value: %d\n", ft_printf("%p"));
+*/
