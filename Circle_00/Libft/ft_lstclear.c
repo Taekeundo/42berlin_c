@@ -18,8 +18,7 @@
 	And deallocate the memory. Each node pointer to the NULL.
 
 	Order to delete starts from the last node.
-
-	리스트의 모든 요소들을 삭제하고 해제. 마지막 리스트의 포인터 NULL설정
+	= 리스트의 모든 요소들을 삭제하고 해제. 마지막 리스트의 포인터 NULL설정
 
 	[ Memo ]
 	lst == NULL	 : list doesn't exist.

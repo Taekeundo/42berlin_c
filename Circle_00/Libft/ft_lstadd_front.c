@@ -18,12 +18,9 @@
 		pointer to the node.
 
 	(2) t_list **node
-		pointer (.)
-		to the pointer(.)
-		points to head node,
+		pointer (.) to the pointer(.) points to head node,
 		which is first node in linked list.
-
-		리스트의 시작 지점인 헤드 노드를 가리키는 포인터에 대한 포인터.
+		= 리스트의 시작 지점인 헤드 노드를 가리키는 포인터에 대한 포인터.
 
 	t_list **node		// Pointer, points to the head node's pointer.
 		.

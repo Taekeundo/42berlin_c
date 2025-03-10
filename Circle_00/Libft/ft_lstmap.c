@@ -14,7 +14,8 @@
 
 /*	[F]
 	[ Definition ]
-	연결 리스트의 각(모든) content에 f 함수를 적용한 결과를 반환.
+	Return whole result(node type), which adapted by Param(2): "f" function.
+	= 연결 리스트의 각(모든) content에 f 함수를 적용한 결과를 반환.
 
 	[ Logic ]
 	1. Goes through Param(1): "lst" linked list,

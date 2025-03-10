@@ -18,6 +18,11 @@
 
 	[ Why using 'unsigned' type? ]
 	'i' is index, must be positive number.
+	When we use variable for 'count' only, at that time,
+	unsigned can cover double range then signed.
+
+	signed variable range: From "-minumun" to "+maximum".
+	unsigned variable range: From "0" to "double maximum".
 
 	[ Memo ]
 	Param(2):"pos" always be updated to check the current position.
