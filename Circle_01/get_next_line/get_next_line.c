@@ -68,6 +68,18 @@ char	*read_and_cpy_file(int fd, char *static_buffer)
 	return (static_buffer);
 }
 
+/*	[F]
+	[ Goal ]
+	Extracts the first line from the param:static_buffer.
+
+	[ Logic ]
+	1. Iterates throught the buffer to find the first newline.
+	2. Allcates memory to store the extracted line, including the neline if present.
+	3. Copies the characters up to the newline into a new string and returns it.
+
+	[ Return ]
+	A string containing the first line, which includes the newline, if exists.
+*/
 char	*cpy_one_line_from_buffer(char *static_buffer)
 {
 	int		i;
@@ -96,6 +108,13 @@ char	*cpy_one_line_from_buffer(char *static_buffer)
 	return (line);
 }
 
+/*	[F]
+	[ Goal ]
+	Moves the static_buffer's pointer forward.
+
+	[ Memo ]
+	It frees the old buffer and returns a pointer to the new part of the buffer (After the newline).
+*/
 char	*move_to_next_line(char *static_buffer)
 {
 	int		i;
@@ -180,7 +199,7 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
-// [ Testing ]
+/* [ Testing ] */
 #include <fcntl.h>
 
 int main(void)
@@ -191,13 +210,11 @@ int main(void)
 	fd = open("test.txt", O_RDONLY);
 	if (fd < 0)
 		return (1);
-	res = get_next_line(fd);
-	if (res == NULL)
+	while ((res = get_next_line(fd)) != NULL)
 	{
-		close(fd);
-		return (1);
+		printf("Result: %s", res);
+		free(res);
 	}
-	printf("Result: %s\n", res);
 	close(fd);
 	return (0);
 }

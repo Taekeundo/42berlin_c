@@ -18,12 +18,12 @@ char	*ft_strjoin(char *l_str, char *r_str)
 	int		i;
 	int		j;
 
-	if (!l_str)
+	if (l_str == NULL)
 	{
 		l_str = (char *)malloc(sizeof(char) * 1);
 		l_str[0] = '\0';
 	}
-	if (l_str == NULL || r_str == NULL)
+	if (r_str == NULL)
 		return (NULL);
 	result = (char *)malloc(sizeof(char) * ((ft_strlen(l_str) + \
 		ft_strlen(r_str)) + 1));
