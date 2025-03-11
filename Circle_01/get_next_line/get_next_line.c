@@ -189,7 +189,7 @@ char	*get_next_line(int fd)
 	char		*line;
 	static char	*static_buffer;
 
-	if (BUFFER_SIZE <= 0)
+	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
 	static_buffer = read_and_cpy_file(fd, static_buffer);
 	if (static_buffer == NULL)
@@ -197,24 +197,4 @@ char	*get_next_line(int fd)
 	line = cpy_one_line_from_buffer(static_buffer);
 	static_buffer = move_to_next_line(static_buffer);
 	return (line);
-}
-
-/* [ Testing ] */
-#include <fcntl.h>
-
-int main(void)
-{
-	int fd;
-	char *res;
-
-	fd = open("test.txt", O_RDONLY);
-	if (fd < 0)
-		return (1);
-	while ((res = get_next_line(fd)) != NULL)
-	{
-		printf("Result: %s", res);
-		free(res);
-	}
-	close(fd);
-	return (0);
 }
