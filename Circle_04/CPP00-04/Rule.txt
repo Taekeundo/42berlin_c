@@ -1,0 +1,40 @@
+[ What to learn ]
+1. Memory allocation
+2. Pointers to members
+3. References
+4. Switch statement
+
+[ Rule ]
+Compiling
+    c++
+    -Wall -Wextra -Werror
+    -std=c++98
+
+Formatting
+    ex00, ex01, ...
+
+Name convention
+    class Name
+        UpperCamelCase
+            (ex) ClassName.cpp ClassName.hpp
+
+    Don't need to do the Norminette anymore!
+
+Forbidden
+    C++ 11
+	1. printf
+    	2. alloc
+    	3. free
+
+    keywords
+        ns_name & friend
+
+    STL
+        Containers
+	vector
+	list
+	map
+        Algorithms
+	#include <algorithm>
+
+    !! Allowed only for Module08 and 09 !!
