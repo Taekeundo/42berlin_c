@@ -14,7 +14,6 @@
 
 /* HEADER FILE */
 // Basic
-// #include <array>
 #include <iostream>   // std::cout, std::cerr
 #include <limits>     // std::numeric_limits
 #include <vector>     // std::vector<int>
@@ -24,11 +23,6 @@
 
 // Exceptional case
 #include <stdexcept>  // std::runtime_error, std::exception
-
-// ??
-// #include <cstddef>    // size_t, std::size_t
-// #include <numeric>    // std::iotam, numeric operations
-// #include <utility>    // std::move, std::pair
 
 /* CLASS */
 /*
