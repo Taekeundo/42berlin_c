@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: tkwak <tkwak@student.42berlin.de>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/03/18 15:43:04 by tkwak             #+#    #+#              #
-#    Updated: 2025/03/18 15:43:05 by tkwak            ###   ########.fr        #
+#    Created: 2025/03/18 17:34:09 by tkwak             #+#    #+#              #
+#    Updated: 2025/03/18 17:34:12 by tkwak            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CDEBUG		= -fsanitize=address -g -pedantic
 RM			= rm -f
 
 # [ FILE ]
-NAME		= span
+NAME		= iter
 SRCS		= $(shell find -iname "*.cpp")
 OBJS		= $(SRCS:.cpp=.o)
 

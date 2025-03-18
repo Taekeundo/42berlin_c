@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Span.hpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tkwak <tkwak@student.42berlin.de>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/18 15:43:20 by tkwak             #+#    #+#             */
+/*   Updated: 2025/03/18 15:43:20 by tkwak            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef SPAN_HPP
 #define SPAN_HPP
 
@@ -52,7 +64,7 @@ class Span
     std::vector<int> vectorContainer;   // A vector to store integer type values.
 
   public:
-    /* [ Orthodox Canonical Form ] */
+    /* [ OCCF: Orthodox Canonical Class Form ] */
     Span();                             // Default constructor
     Span(unsigned int value);           // Parameterized constructor
     Span(const Span& other);            // Copy constructor
