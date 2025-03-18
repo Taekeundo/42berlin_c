@@ -3,13 +3,26 @@
 void  testMandatory()
 {
   Span sp = Span(5);
+  std::string error = "";
 
-  sp.addNumber(6);
-  sp.addNumber(3);
-  sp.addNumber(17);
-  sp.addNumber(9);
-  sp.addNumber(11);
-
+  try
+  {
+    sp.addNumber(6);
+    sp.addNumber(3);
+    sp.addNumber(17);
+    sp.addNumber(9);
+    sp.addNumber(11);
+  }
+  catch (std::exception &e)
+  {
+    std::cout << e.what() << std::endl;
+    error += e.what();
+  }
+  if (!error.empty())
+  {
+    std::cout << PUR << "The program is no longer executable" << EOC << std::endl;
+    exit(1);
+  }
   std::cout << "shortestSpan: " << sp.shortestSpan() << std::endl;
   std::cout << " longestSpan: " << sp.longestSpan() << std::endl;
 }
@@ -17,10 +30,25 @@ void  testMandatory()
 void testMax()
 {
   Span sp = Span(10000);
+  std::string error = "";
 
   for (int i = -5000; i <= 4999; i++)
-    sp.addNumber(i);
-
+  {
+    try
+    {
+      sp.addNumber(i);
+    }
+    catch (std::exception &e)
+    {
+      std::cout << e.what() << std::endl;
+      error += e.what();
+    }
+    if (!error.empty())
+    {
+      std::cout << PUR << "The program is no longer executable" << EOC << std::endl;
+      exit(1);
+    }
+  }
   std::cout << "shortestSpan: " << sp.shortestSpan() << std::endl;
   std::cout << " longestSpan: " << sp.longestSpan() << std::endl;
 }
@@ -29,9 +57,22 @@ void testRangeArray()
 {
   int testArray[5] = {9, 3, 5, 7, 1};
   Span sp(5);
+  std::string error = "";
 
-  sp.addRange(std::vector<int>(testArray, testArray + 5));
-
+  try
+  {
+    sp.addRange(std::vector<int>(testArray, testArray + 5));
+  }
+  catch (std::exception &e)
+  {
+    std::cout << e.what() << std::endl;
+    error += e.what();
+  }
+  if (!error.empty())
+  {
+    std::cout << PUR << "The program is no longer executable" << EOC << std::endl;
+    exit(1);
+  }
   std::cout << "shortestSpan: " << sp.shortestSpan() << std::endl;
   std::cout << " longestSpan: " << sp.longestSpan() << std::endl;
 }
@@ -40,13 +81,26 @@ void testRangeContainer()
 {
   std::vector<int>  testVector;
   Span sp(9);
+  std::string error = "";
 
   for (int i = 1; i < 10; i++)
   {
     testVector.push_back(i * 5);
   }
-  sp.addRange(testVector);
-
+  try
+  {
+    sp.addRange(testVector);
+  }
+  catch (std::exception &e)
+  {
+    std::cout << e.what() << std::endl;
+    error += e.what();
+  }
+  if (!error.empty())
+  {
+    std::cout << PUR << "The program is no longer executable" << EOC << std::endl;
+    exit(1);
+  }
   std::cout << "shortestSpan: " << sp.shortestSpan() << std::endl;
   std::cout << " longestSpan: " << sp.longestSpan() << std::endl;
 }
@@ -55,7 +109,7 @@ void testNospan()
 {
   try
   {
-    Span sp(0);
+    Span sp(3);
     std::cout << "Case(1) capacity is 0 & check shortestSpan" << std::endl;
     std::cout << "shortestSpan: " << sp.shortestSpan() << std::endl;
   }
