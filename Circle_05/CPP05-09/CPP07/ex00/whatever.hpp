@@ -29,6 +29,7 @@
 #include <string>       // std::string
 #include <iostream>     // std::cout
 
+// Function template implementation can put in a header file following by the pdf.
 template <typename T>
 void swap(T& a, T& b)
 {
