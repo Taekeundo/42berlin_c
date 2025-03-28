@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: tkwak <tkwak@student.42berlin.de>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/03/24 10:00:12 by tkwak             #+#    #+#              #
-#    Updated: 2025/03/28 15:01:01 by tkwak            ###   ########.fr        #
+#    Created: 2025/03/28 15:02:03 by tkwak             #+#    #+#              #
+#    Updated: 2025/03/28 15:02:06 by tkwak            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CDEBUG		= -fsanitize=address -g -pedantic
 RM			= rm -f
 
 # [ FILE ]
-NAME		= Converter
+NAME		= Base
 SRCS		= $(shell find . -name "*.cpp")
 OBJS		= $(SRCS:.cpp=.o)
 
