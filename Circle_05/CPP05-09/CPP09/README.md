@@ -20,7 +20,7 @@ and calculate the Bitcoin value on that date.
 **`std::map(key, value)`**
  1. It's ideal for storing both (key-value)pairs together.
  2. `std::map::lower_bound`.
-    It's easy yo find the closest date by using this method.
+    It's easy to find the closest date by using this method.
 
 ### Logic
  1. Parsing the given file (= data.csv)
@@ -67,6 +67,7 @@ Operands Operands Operator -> Program execute -> Operands Operator Operands
     2-2. Calculate it.
  3. Push back the calculated result onto the stack.
 
+---
 
 
 

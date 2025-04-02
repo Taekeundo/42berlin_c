@@ -15,11 +15,8 @@
 /* HEADER FILE */
 #include <iostream>         // std::cout, std::cerr
 #include <stack>            // Container: "stack"
-// #include <string>
-// #include <cstdlib>
-// #include <cctype>
-// #include <sstream>
-// #include <cmath>
+#include <string>			// std::string
+#include <cctype>			// [f]isdigit();
 
 /* CLASS */
 class RPN
