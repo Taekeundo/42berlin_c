@@ -1,36 +1,29 @@
-### 42 Berlin (2023.5 ~ )
+## 42 Berlin (2023.5 ~ )
 
- |Index|Circle|Project|Stack|Status|
- |:---:|:---:|:---:|:---:|:---:|
- |00|00|[**Piscine**](https://github.com/Taekeundo/42berlin/tree/main/Piscine)|C|Completed
- |01|00|[**Libft**](https://github.com/Taekeundo/42berlin/tree/main/Circle_00/Libft)|C|Completed
- |02|01|[**ft_printf**](https://github.com/Taekeundo/42berlin/tree/main/Circle_01/ft_printf)|C|Completed
- |03|01|[**get_next_line**](https://github.com/Taekeundo/42berlin/tree/main/Circle_01/get_next_line)|C|Completed
- |04|01|[**Born2beroot**](https://github.com/Taekeundo/42berlin/tree/main/Circle_01/Born2beroot)|C|Completed
- |05|02|[**pipex**](https://github.com/Taekeundo/42berlin/tree/main/Circle_02/pipex)|C|Completed
- |06|02|[**push_swap**](https://github.com/Taekeundo/42berlin/tree/main/Circle_02/push_swap)|C|Completed
- |07|02|[**so_long**](https://github.com/Taekeundo/42berlin/tree/main/Circle_02/so_long)|C|Completed
-
- |08|03|[**minishell**]()|C|Completed
- |09|03|[**philosophers**]()|C|Completed
-
- |10|04|[**NetPractice**]()||Completed
- |11|04|[**cub3D**]()|C|Completed
-
- |12|04|[**CPP00**]()|C++|Completed
- |13|04|[**CPP01**]()|C++|Completed
- |14|04|[**CPP02**]()|C++|Completed
- |15|04|[**CPP03**]()|C++|Completed
- |16|04|[**CPP04**]()|C++|Completed
- |17|05|[**CPP05**]()|C++|Completed
- |18|05|[**CPP06**]()|C++|Completed
- |19|05|[**CPP07**]()|C++|Completed
- |20|05|[**CPP08**]()|C++|Completed
- |21|05|[**CPP09**]()|C++|-
- 
- |22|05|[**Inception**]()|Docker Compose|Completed
- |23|05|[**ft_irc**]()|C++|Completed
-
- |24|06|[**ft_transcendence**]()|-|-
-
-
+|Index|Project|Stack|Status|
+|:---:|:---:|:---:|:---:|
+|00|[**Piscine**](https://github.com/Taekeundo/42berlin/tree/main/Piscine)|C|✅
+|01|[**Libft**](https://github.com/Taekeundo/42berlin/tree/main/Circle_00/Libft)|C|✅
+|02|[**ft_printf**](https://github.com/Taekeundo/42berlin/tree/main/Circle_01/ft_printf)|C|✅
+|03|[**get_next_line**](https://github.com/Taekeundo/42berlin/tree/main/Circle_01/get_next_line)|C|✅
+|04|[**Born2beroot**](https://github.com/Taekeundo/42berlin/tree/main/Circle_01/Born2beroot)|C|✅
+|05|[**pipex**](https://github.com/Taekeundo/42berlin/tree/main/Circle_02/pipex)|C|✅
+|06|[**push_swap**](https://github.com/Taekeundo/42berlin/tree/main/Circle_02/push_swap)|C|✅
+|07|[**so_long**](https://github.com/Taekeundo/42berlin/tree/main/Circle_02/so_long)|C|✅
+|08|[**minishell**](https://github.com/Taekeundo/minishell)|C|✅
+|09|[**philosophers**](https://github.com/Taekeundo/42berlin/tree/main/Circle_03/Philosophers)|C|✅
+|10|[**NetPractice**](https://github.com/Taekeundo/42berlin/tree/main/Circle_04/NetPractice)|-|✅
+|11|[**cub3D**](https://github.com/Taekeundo/42berlin/tree/main/Circle_04/cub3d)|C|✅
+|12|[**CPP00**](https://github.com/Taekeundo/42berlin/tree/main/Circle_04/CPP00-04/CPP00)|C++|✅
+|13|[**CPP01**](https://github.com/Taekeundo/42berlin/tree/main/Circle_04/CPP00-04/CPP01)|C++|✅
+|14|[**CPP02**](https://github.com/Taekeundo/42berlin/tree/main/Circle_04/CPP00-04/CPP02)|C++|✅
+|15|[**CPP03**](https://github.com/Taekeundo/42berlin/tree/main/Circle_04/CPP00-04/CPP03)|C++|✅
+|16|[**CPP04**](https://github.com/Taekeundo/42berlin/tree/main/Circle_04/CPP00-04/CPP04)|C++|✅
+|17|[**CPP05**](https://github.com/Taekeundo/42berlin/tree/main/Circle_05/CPP05-09/CPP05)|C++|✅
+|18|[**CPP06**](https://github.com/Taekeundo/42berlin/tree/main/Circle_05/CPP05-09/CPP06)|C++|✅
+|19|[**CPP07**](https://github.com/Taekeundo/42berlin/tree/main/Circle_05/CPP05-09/CPP07)|C++|✅
+|20|[**CPP08**](https://github.com/Taekeundo/42berlin/tree/main/Circle_05/CPP05-09/CPP08)|C++|✅
+|21|[**CPP09**](https://github.com/Taekeundo/42berlin/tree/main/Circle_05/CPP05-09/CPP09)|C++|🛠️
+|22|[**ft_irc**](https://github.com/Taekeundo/42berlin/tree/main/Circle_05/ft_irc)|C++|✅
+|23|[**Inception**](https://github.com/Taekeundo/42berlin/tree/main/Circle_05/Inception)|Docker Compose|✅
+|24|[**ft_transcendence**](https://github.com/Taekeundo/42berlin/tree/main/Circle_06/ft_transcendence)|-|🛠️
